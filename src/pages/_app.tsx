@@ -1,15 +1,14 @@
-import { AppProps } from 'next/app'
-import { ChakraProvider } from '@chakra-ui/react'
-import { theme } from '../styles/theme'
-import NextNProgress from 'nextjs-progressbar';
+import { AppProps } from "next/app"
+import NextNProgress from "nextjs-progressbar"
+import { ChakraProvider } from "@chakra-ui/react"
 
-// Import Swiper styles
-import 'swiper/swiper.scss';
-import 'swiper/components/navigation/navigation.scss';
-import 'swiper/components/pagination/pagination.scss';
-import 'swiper/components/scrollbar/scrollbar.scss';
+import "swiper/swiper.scss"
+import "swiper/components/navigation/navigation.scss"
+import "swiper/components/pagination/pagination.scss"
+import "swiper/components/scrollbar/scrollbar.scss"
 
-import '../styles/slider.scss';
+import { theme } from "../styles/theme"
+import '../styles/slider.scss'
 
 function App({ Component, pageProps }: AppProps) {
   return (
@@ -20,7 +19,7 @@ function App({ Component, pageProps }: AppProps) {
         stopDelayMs={200}
         height={5}
       />
-        <Component {...pageProps} />
+      <Component {...pageProps} />
     </ChakraProvider>
   )
 }

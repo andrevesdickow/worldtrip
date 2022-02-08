@@ -1,7 +1,7 @@
 import { GetStaticProps } from "next"
 import Head from "next/head"
 import { Flex, Heading } from "@chakra-ui/react"
-import Prismic from '@prismicio/client'
+import Prismic from "@prismicio/client"
 
 import { Banner } from "../components/Banner"
 import { Characteristics } from "../components/Characteristics"
